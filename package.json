@@ -10,13 +10,14 @@
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 9000 -c .storybook",
-    "build": "rm -rf lib && babel components --out-dir lib"
+    "build": "rm -rf lib && babel components --out-dir lib --ignore \"**/*.story.js\",\"**/*.story.jsx\""
   },
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.2",
     "@babel/core": "^7.1.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/preset-env": "^7.1.0",

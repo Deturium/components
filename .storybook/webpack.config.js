@@ -9,8 +9,8 @@ module.exports = (storybookBaseConfig, configType) => {
   // Make whatever fine-grained changes you need
   storybookBaseConfig.module.rules.push({
     test: /\.jsx?$/,
+    include: path.resolve(__dirname, "../"),
     loaders: ["babel-loader"],
-    include: path.resolve(__dirname, "../")
   });
 
   storybookBaseConfig.resolve.extensions.push(".jsx");
