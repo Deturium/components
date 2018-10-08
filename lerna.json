@@ -1,0 +1,19 @@
+{
+  "lerna": "3.4.1",
+  "packages": [
+    "components/",
+    "storybook/",
+    "docs/"
+  ],
+  "npmClient": "yarn",
+  "command": {
+    "publish": {
+      "allowBranch": "master"
+    }
+  },
+  "ignoreChanges": [
+    "**/__tests__/**",
+    "**/*.md"
+  ],
+  "version": "0.1.0"
+}

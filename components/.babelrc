@@ -1,9 +1,8 @@
 {
   "presets": [
     ["@babel/env", {
-      "targets": {
-        "esmodules": true
-      }
+      "modules": false,
+      "targets": { "esmodules": true }
     }],
     "@babel/react"
   ],

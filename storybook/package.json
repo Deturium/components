@@ -1,0 +1,19 @@
+{
+  "name": "@myc/storybook",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "start-storybook -p 9000 -c .storybook"
+  },
+  "dependencies": {
+    "@myc/components": "^0.1.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@storybook/addon-actions": "^4.0.0-alpha.24",
+    "@storybook/addon-notes": "^4.0.0-alpha.24",
+    "@storybook/react": "^4.0.0-alpha.24",
+    "babel-loader": "^8.0.4"
+  }
+}

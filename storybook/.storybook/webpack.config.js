@@ -1,4 +1,4 @@
-const path = require("path");
+// const path = require("path");
 
 // Export a function. Accept the base config as the only param.
 module.exports = (storybookBaseConfig, configType) => {
@@ -7,13 +7,7 @@ module.exports = (storybookBaseConfig, configType) => {
   // 'PRODUCTION' is used when building the static version of storybook.
 
   // Make whatever fine-grained changes you need
-  storybookBaseConfig.module.rules.push({
-    test: /\.jsx?$/,
-    include: path.resolve(__dirname, "../"),
-    loaders: ["babel-loader"],
-  });
-
-  storybookBaseConfig.resolve.extensions.push(".jsx");
+  storybookBaseConfig.resolve.modules.push('storybook/node_modules')
 
   // Return the altered config
   return storybookBaseConfig;
