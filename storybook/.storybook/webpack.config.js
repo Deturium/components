@@ -7,7 +7,7 @@ module.exports = (storybookBaseConfig, configType) => {
   // 'PRODUCTION' is used when building the static version of storybook.
 
   // Make whatever fine-grained changes you need
-  storybookBaseConfig.resolve.modules.push('storybook/node_modules')
+  storybookBaseConfig.resolve.modules.push('storybook/node_modules');
 
   // Return the altered config
   return storybookBaseConfig;
